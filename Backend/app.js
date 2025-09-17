@@ -17,7 +17,7 @@ app.use(
             "http://localhost:5173",                   
             "https://cafe-website-9iu6.vercel.app/" 
         ],
-        methods: ["POST"],
+        methods: ["POST","GET"],
         credentials: true,  
     })
 );
