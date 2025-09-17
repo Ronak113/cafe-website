@@ -12,7 +12,11 @@ dotenv.config({path: "./config/config.env"});
 
 app.use(
     cors({
-        origin:[process.env.FRONTEND_URL],
+        origin:[
+            process.env.FRONTEND_URL,
+            "http://localhost:5173",                   
+            "https://cafe-website-9iu6.vercel.app/" 
+        ],
         methods: ["POST"],
         credentials: true,  
     })
